@@ -25,7 +25,12 @@ export default function Navbar() {
     <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-black/80 backdrop-blur-xl py-4 shadow-2xl' : 'bg-transparent py-8'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center group">
-          <img src="/images/02.png" alt="LEX HOLDING" className="h-32 md:h-36 w-auto object-contain brightness-0 invert" referrerPolicy="no-referrer" />
+          <img 
+            src="https://efzybrnlapxwxkorddtv.supabase.co/storage/v1/object/sign/LEX%20holding/02.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80MTdmZmQ5ZS1jYWE3LTRmY2MtYTgzNS1mYzgwZGE1YWY0ZjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJMRVggaG9sZGluZy8wMi5wbmciLCJpYXQiOjE3NzMzOTcyMTQsImV4cCI6MjA4ODc1NzIxNH0.5f9RIwOZ22MPwG94Xm5KoMEZcoVwUYqzuy1d33odSLk" 
+            alt="LEX HOLDING" 
+            className="h-32 md:h-36 w-auto object-contain brightness-0 invert" 
+            referrerPolicy="no-referrer" 
+          />
         </Link>
 
         {/* Desktop Menu */}

@@ -7,7 +7,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="space-y-6">
           <Link to="/" className="inline-block">
-            <img src="/images/02.png" alt="LEX HOLDING" className="h-36 w-auto object-contain brightness-0 invert" referrerPolicy="no-referrer" />
+            <img 
+              src="https://efzybrnlapxwxkorddtv.supabase.co/storage/v1/object/sign/LEX%20holding/02.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80MTdmZmQ5ZS1jYWE3LTRmY2MtYTgzNS1mYzgwZGE1YWY0ZjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJMRVggaG9sZGluZy8wMi5wbmciLCJpYXQiOjE3NzMzOTcyMTQsImV4cCI6MjA4ODc1NzIxNH0.5f9RIwOZ22MPwG94Xm5KoMEZcoVwUYqzuy1d33odSLk" 
+              alt="LEX HOLDING" 
+              className="h-36 w-auto object-contain brightness-0 invert" 
+              referrerPolicy="no-referrer" 
+            />
           </Link>
           <p className="text-white/60 text-sm leading-relaxed max-w-xs">
             L'Excellence au Service du Développement. Un groupe multisectoriel engagé pour l'avenir de la RDC.
