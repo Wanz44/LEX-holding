@@ -57,7 +57,7 @@ export default function App() {
                         <option>Investissement</option>
                         <option>Partenariat</option>
                         <option>Lex Kitoko (Immobilier)</option>
-                        <option>Lex Salus (Santé)</option>
+                        <option>Lex Salus (Santé & Vétérinaire)</option>
                       </select>
                     </div>
                     <div className="space-y-2">

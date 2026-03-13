@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className="bg-black text-white py-20 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="space-y-6">
-          <Link to="/" className="text-3xl font-bold tracking-tighter">
-            LEX<span className="font-light">HOLDING</span>
+          <Link to="/" className="inline-block">
+            <img src="/images/02.png" alt="LEX HOLDING" className="h-36 w-auto object-contain brightness-0 invert" referrerPolicy="no-referrer" />
           </Link>
           <p className="text-white/60 text-sm leading-relaxed max-w-xs">
             L'Excellence au Service du Développement. Un groupe multisectoriel engagé pour l'avenir de la RDC.
@@ -27,7 +27,7 @@ export default function Footer() {
             <li><Link to="/pole/agricultura" className="text-sm text-white/60 hover:text-white transition-colors">Agriculture</Link></li>
             <li><Link to="/pole/musicae" className="text-sm text-white/60 hover:text-white transition-colors">Musique</Link></li>
             <li><Link to="/pole/transportatio" className="text-sm text-white/60 hover:text-white transition-colors">Logistique</Link></li>
-            <li><Link to="/pole/salus" className="text-sm text-white/60 hover:text-white transition-colors">Santé</Link></li>
+            <li><Link to="/pole/salus" className="text-sm text-white/60 hover:text-white transition-colors">Santé & Vétérinaire</Link></li>
           </ul>
         </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
           <ul className="space-y-6">
             <li className="flex items-start space-x-3">
               <MapPin size={18} className="text-white/40 mt-1" />
-              <span className="text-sm text-white/60">Siège Social, Gombe, Kinshasa, RDC</span>
+              <span className="text-sm text-white/60">Siège Social, Kinshasa, RDC</span>
             </li>
             <li className="flex items-center space-x-3">
               <Phone size={18} className="text-white/40" />

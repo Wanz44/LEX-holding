@@ -60,90 +60,111 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-32 px-6 bg-white text-black">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <div className="space-y-8">
-            <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-black/40">À Propos de Lex Holding</h2>
-            <h3 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight">
-              Un acteur majeur de la <br /> transformation économique.
-            </h3>
-            <p className="text-lg text-black/60 leading-relaxed font-light">
-              Lex Holding est un groupe diversifié opérant dans les secteurs clés de l'économie congolaise. De l'immobilier de luxe à l'agro-industrie, nous appliquons les plus hauts standards de rigueur et d'innovation pour créer de la valeur durable.
+      <section className="py-40 px-6 bg-white text-black relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full opacity-[0.02] pointer-events-none">
+          <div className="absolute top-20 left-20 w-96 h-96 border border-black rounded-full" />
+          <div className="absolute bottom-20 right-20 w-[500px] h-[500px] border border-black rounded-full" />
+        </div>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+          <div className="space-y-12">
+            <div className="space-y-6">
+              <h2 className="text-xs uppercase tracking-[0.5em] font-bold text-black/40">Notre Vision</h2>
+              <h3 className="text-5xl md:text-7xl font-bold tracking-tighter leading-none">
+                Bâtir l'avenir, <br /> un secteur à la fois.
+              </h3>
+            </div>
+            <p className="text-xl text-black/60 leading-relaxed font-light max-w-xl">
+              Lex Holding est un conglomérat stratégique dédié à l'émergence de la République Démocratique du Congo. Nous investissons dans l'excellence opérationnelle et l'innovation pour transformer les défis en opportunités de croissance durable.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
-              <div className="space-y-4">
-                <Shield className="w-8 h-8 text-black" />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pt-8">
+              <div className="space-y-4 group">
+                <div className="w-12 h-12 rounded-xl bg-black/5 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
+                  <Shield className="w-6 h-6" />
+                </div>
                 <h4 className="font-bold uppercase tracking-widest text-xs">Discrétion</h4>
-                <p className="text-xs text-black/40">La confidentialité au cœur de nos relations d'affaires.</p>
+                <p className="text-[10px] text-black/40 leading-relaxed">Confidentialité absolue dans nos partenariats stratégiques.</p>
               </div>
-              <div className="space-y-4">
-                <Target className="w-8 h-8 text-black" />
+              <div className="space-y-4 group">
+                <div className="w-12 h-12 rounded-xl bg-black/5 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
+                  <Target className="w-6 h-6" />
+                </div>
                 <h4 className="font-bold uppercase tracking-widest text-xs">Sérieux</h4>
-                <p className="text-xs text-black/40">Un engagement total pour la réussite de chaque projet.</p>
+                <p className="text-[10px] text-black/40 leading-relaxed">Rigueur et intégrité au cœur de chaque décision.</p>
               </div>
-              <div className="space-y-4">
-                <Zap className="w-8 h-8 text-black" />
+              <div className="space-y-4 group">
+                <div className="w-12 h-12 rounded-xl bg-black/5 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
+                  <Zap className="w-6 h-6" />
+                </div>
                 <h4 className="font-bold uppercase tracking-widest text-xs">Efficacité</h4>
-                <p className="text-xs text-black/40">Des résultats concrets pour un impact réel.</p>
+                <p className="text-[10px] text-black/40 leading-relaxed">Optimisation des ressources pour un impact maximal.</p>
               </div>
             </div>
           </div>
-          <div className="relative aspect-square">
-            <img
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80"
-              alt="Architecture moderne"
-              className="w-full h-full object-cover grayscale"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-black p-10 hidden md:flex flex-col justify-end">
-              <span className="text-6xl font-bold text-white">10+</span>
-              <span className="text-xs text-white/40 uppercase tracking-widest mt-2">Années d'Excellence</span>
+          <div className="relative group">
+            <div className="absolute -inset-4 bg-black/5 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
+            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80"
+                alt="Architecture moderne"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute bottom-10 left-10 right-10 bg-black/90 backdrop-blur-md p-8 rounded-2xl border border-white/10">
+                <div className="flex items-end space-x-4">
+                  <span className="text-5xl font-bold text-white leading-none">10+</span>
+                  <span className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Années d'Excellence <br /> en RDC</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Mosaic Section */}
-      <section id="poles" className="py-32 px-6 bg-black">
+      <section id="poles" className="py-40 px-6 bg-zinc-950">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-            <div className="space-y-4">
-              <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-white/40">Nos Filiales</h2>
-              <h3 className="text-4xl md:text-6xl font-bold tracking-tighter text-white">Un Écosystème de Solutions.</h3>
+          <div className="flex flex-col md:flex-row justify-between items-end mb-32 gap-12">
+            <div className="space-y-6">
+              <h2 className="text-xs uppercase tracking-[0.5em] font-bold text-white/40">Notre Écosystème</h2>
+              <h3 className="text-5xl md:text-8xl font-bold tracking-tighter text-white leading-none">Pôles d'Expertise.</h3>
             </div>
-            <p className="text-white/40 max-w-md text-sm leading-relaxed">
-              Chaque branche de Lex Holding est un leader dans son domaine, portée par une vision commune d'excellence et de développement.
+            <p className="text-white/40 max-w-md text-lg font-light leading-relaxed">
+              Chaque filiale de Lex Holding incarne notre promesse d'excellence, apportant des solutions concrètes aux besoins de la nation.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {BRANCHES.map((branch, index) => (
               <Link
                 key={branch.id}
                 to={`/pole/${branch.id}`}
-                className="group relative aspect-[4/5] overflow-hidden bg-black"
+                className="group relative aspect-[4/5] overflow-hidden rounded-3xl bg-black border border-white/5"
               >
                 <img
                   src={branch.image}
                   alt={branch.name}
-                  className="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-110 transition-all duration-700"
+                  className="w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-110 transition-all duration-1000 grayscale group-hover:grayscale-0"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 p-10 flex flex-col justify-between">
+                <div className="absolute inset-0 p-12 flex flex-col justify-between">
                   <div className="flex justify-between items-start">
-                    <span className="text-[10px] uppercase tracking-[0.3em] text-white/60">0{index + 1}</span>
+                    <span className="text-[10px] uppercase tracking-[0.5em] text-white/40 font-bold">0{index + 1}</span>
                     <div
-                      className="w-12 h-12 flex items-center justify-center border border-white/20 group-hover:bg-white group-hover:text-black transition-all"
-                      style={{ borderColor: branch.color }}
+                      className="w-14 h-14 rounded-full flex items-center justify-center border border-white/10 bg-black/20 backdrop-blur-md group-hover:bg-white group-hover:text-black transition-all duration-500"
                     >
-                      <ArrowRight size={20} />
+                      <ArrowRight size={24} className="-rotate-45 group-hover:rotate-0 transition-transform duration-500" />
                     </div>
                   </div>
-                  <div className="space-y-4">
-                    <h4 className="text-2xl font-bold text-white tracking-tight">{branch.name}</h4>
-                    <p className="text-xs text-white/40 uppercase tracking-widest">{branch.domain}</p>
+                  <div className="space-y-6">
+                    <div className="space-y-2">
+                      <p className="text-[10px] uppercase tracking-[0.3em] font-bold" style={{ color: branch.color }}>{branch.domain}</p>
+                      <h4 className="text-3xl font-bold text-white tracking-tight leading-tight">{branch.name}</h4>
+                    </div>
+                    <p className="text-xs text-white/40 leading-relaxed opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                      {branch.description}
+                    </p>
                     <div
-                      className="h-1 w-0 group-hover:w-full transition-all duration-500"
+                      className="h-1 w-0 group-hover:w-full transition-all duration-700 rounded-full"
                       style={{ backgroundColor: branch.color }}
                     />
                   </div>

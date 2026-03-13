@@ -22,33 +22,36 @@ export default function Navbar() {
   }, [location]);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-black/80 backdrop-blur-xl py-4 shadow-2xl' : 'bg-transparent py-8'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold tracking-tighter text-white">
-          LEX<span className="font-light">HOLDING</span>
+        <Link to="/" className="flex items-center group">
+          <img src="/images/02.png" alt="LEX HOLDING" className="h-32 md:h-36 w-auto object-contain brightness-0 invert" referrerPolicy="no-referrer" />
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
-          <Link to="/" className="text-sm uppercase tracking-widest text-white/80 hover:text-white transition-colors">Accueil</Link>
+        <div className="hidden md:flex items-center space-x-12">
+          <Link to="/" className="text-[10px] uppercase tracking-[0.3em] text-white/60 hover:text-white transition-all hover:tracking-[0.4em]">Accueil</Link>
           <div className="relative group">
-            <button className="flex items-center text-sm uppercase tracking-widest text-white/80 hover:text-white transition-colors">
-              Nos Pôles <ChevronDown className="ml-1 w-4 h-4" />
+            <button className="flex items-center text-[10px] uppercase tracking-[0.3em] text-white/60 hover:text-white transition-all hover:tracking-[0.4em]">
+              Nos Pôles <ChevronDown className="ml-2 w-3 h-3 group-hover:rotate-180 transition-transform" />
             </button>
-            <div className="absolute top-full left-0 mt-2 w-64 bg-black border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-              {BRANCHES.map((branch) => (
-                <Link
-                  key={branch.id}
-                  to={`/pole/${branch.id}`}
-                  className="block px-6 py-3 text-xs uppercase tracking-widest text-white/60 hover:text-white hover:bg-white/5 transition-colors"
-                >
-                  {branch.name}
-                </Link>
-              ))}
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-72 bg-zinc-950 border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="p-2">
+                {BRANCHES.map((branch) => (
+                  <Link
+                    key={branch.id}
+                    to={`/pole/${branch.id}`}
+                    className="flex items-center justify-between px-6 py-4 text-[10px] uppercase tracking-widest text-white/40 hover:text-white hover:bg-white/5 transition-all rounded-xl group/item"
+                  >
+                    <span>{branch.name}</span>
+                    <div className="w-1 h-1 rounded-full bg-white opacity-0 group-hover/item:opacity-100 transition-opacity" style={{ backgroundColor: branch.color }} />
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
-          <Link to="/investisseurs" className="text-sm uppercase tracking-widest text-white/80 hover:text-white transition-colors">Investisseurs</Link>
-          <Link to="/contact" className="px-6 py-2 border border-white/20 text-sm uppercase tracking-widest text-white hover:bg-white hover:text-black transition-all">Contact</Link>
+          <Link to="/investisseurs" className="text-[10px] uppercase tracking-[0.3em] text-white/60 hover:text-white transition-all hover:tracking-[0.4em]">Investisseurs</Link>
+          <Link to="/contact" className="px-8 py-3 bg-white text-black text-[10px] uppercase tracking-[0.3em] font-bold hover:bg-white/90 transition-all rounded-full shadow-xl shadow-white/5">Contact</Link>
         </div>
 
         {/* Mobile Toggle */}
