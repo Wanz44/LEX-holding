@@ -28,9 +28,9 @@ export const BRANCHES: Branch[] = [
       "Conseil en Investissement Foncier"
     ],
     stats: [
-      { label: "Biens Vendus", value: "150+" },
-      { label: "Clients Satisfaits", value: "500+" },
-      { label: "Experts", value: "12" }
+      { label: "Biens Vendus", value: "" },
+      { label: "Clients Satisfaits", value: "" },
+      { label: "Experts", value: "" }
     ]
   },
   {
@@ -49,9 +49,9 @@ export const BRANCHES: Branch[] = [
       "Accompagnement de Carrière"
     ],
     stats: [
-      { label: "Apprenants", value: "2000+" },
-      { label: "Formateurs", value: "25" },
-      { label: "Programmes", value: "15" }
+      { label: "Apprenants", value: "" },
+      { label: "Formateurs", value: "" },
+      { label: "Programmes", value: "" }
     ]
   },
   {
@@ -72,9 +72,9 @@ export const BRANCHES: Branch[] = [
       "Distribution de Produits Frais"
     ],
     stats: [
-      { label: "Hectares", value: "500+" },
-      { label: "Production/An", value: "1200T" },
-      { label: "Partenaires", value: "40" }
+      { label: "Hectares", value: "" },
+      { label: "Production/An", value: "" },
+      { label: "Partenaires", value: "" }
     ]
   },
   {
@@ -93,9 +93,9 @@ export const BRANCHES: Branch[] = [
       "Événementiel Culturel"
     ],
     stats: [
-      { label: "Albums Produits", value: "30+" },
-      { label: "Artistes", value: "15" },
-      { label: "Récompenses", value: "10" }
+      { label: "Albums Produits", value: "" },
+      { label: "Artistes", value: "" },
+      { label: "Récompenses", value: "" }
     ]
   },
   {
@@ -114,9 +114,9 @@ export const BRANCHES: Branch[] = [
       "Gestion de Flotte"
     ],
     stats: [
-      { label: "Véhicules", value: "80+" },
-      { label: "Destinations", value: "25" },
-      { label: "Tonnage/Mois", value: "5000T" }
+      { label: "Véhicules", value: "" },
+      { label: "Destinations", value: "" },
+      { label: "Tonnage/Mois", value: "" }
     ]
   },
   {
@@ -136,9 +136,9 @@ export const BRANCHES: Branch[] = [
       "Télémédecine"
     ],
     stats: [
-      { label: "Patients/An", value: "10k+" },
-      { label: "Médecins", value: "20" },
-      { label: "Cliniques", value: "3" }
+      { label: "Patients/An", value: "" },
+      { label: "Médecins", value: "" },
+      { label: "Cliniques", value: "" }
     ]
   },
 ];

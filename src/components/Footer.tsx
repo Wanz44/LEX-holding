@@ -55,7 +55,14 @@ export default function Footer() {
             </li>
             <li className="flex items-center space-x-3">
               <Phone size={18} className="text-white/40" />
-              <span className="text-sm text-white/60">+243 980 631 745</span>
+              <a 
+                href="https://wa.me/243980631745" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-sm text-white/60 hover:text-white transition-colors"
+              >
+                +243 980 631 745
+              </a>
             </li>
             <li className="flex items-center space-x-3">
               <Mail size={18} className="text-white/40" />

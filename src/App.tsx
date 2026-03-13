@@ -39,20 +39,32 @@ export default function App() {
                     <h1 className="text-5xl font-bold tracking-tighter">Contactez-nous</h1>
                     <p className="text-black/40 uppercase tracking-widest text-xs">Siège Social - Kinshasa, RDC</p>
                   </div>
-                  <form className="space-y-8">
+                  <form 
+                    className="space-y-8"
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      const formData = new FormData(e.currentTarget);
+                      const name = formData.get('name');
+                      const email = formData.get('email');
+                      const subject = formData.get('subject');
+                      const message = formData.get('message');
+                      const text = `Nom: ${name}%0AEmail: ${email}%0ASujet: ${subject}%0AMessage: ${message}`;
+                      window.open(`https://wa.me/243980631745?text=${text}`, '_blank');
+                    }}
+                  >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <div className="space-y-2">
                         <label className="text-[10px] uppercase tracking-widest font-bold text-black/40">Nom Complet</label>
-                        <input type="text" className="w-full border-b border-black/10 py-3 focus:border-black outline-none transition-colors" />
+                        <input name="name" type="text" required className="w-full border-b border-black/10 py-3 focus:border-black outline-none transition-colors" />
                       </div>
                       <div className="space-y-2">
                         <label className="text-[10px] uppercase tracking-widest font-bold text-black/40">Email</label>
-                        <input type="email" className="w-full border-b border-black/10 py-3 focus:border-black outline-none transition-colors" />
+                        <input name="email" type="email" required className="w-full border-b border-black/10 py-3 focus:border-black outline-none transition-colors" />
                       </div>
                     </div>
                     <div className="space-y-2">
                       <label className="text-[10px] uppercase tracking-widest font-bold text-black/40">Sujet</label>
-                      <select className="w-full border-b border-black/10 py-3 focus:border-black outline-none transition-colors">
+                      <select name="subject" className="w-full border-b border-black/10 py-3 focus:border-black outline-none transition-colors">
                         <option>Demande d'information générale</option>
                         <option>Investissement</option>
                         <option>Partenariat</option>
@@ -62,10 +74,10 @@ export default function App() {
                     </div>
                     <div className="space-y-2">
                       <label className="text-[10px] uppercase tracking-widest font-bold text-black/40">Message</label>
-                      <textarea rows={6} className="w-full border-b border-black/10 py-3 focus:border-black outline-none transition-colors resize-none"></textarea>
+                      <textarea name="message" rows={6} required className="w-full border-b border-black/10 py-3 focus:border-black outline-none transition-colors resize-none"></textarea>
                     </div>
-                    <button className="w-full py-5 bg-black text-white text-xs uppercase tracking-widest font-bold hover:bg-black/90 transition-all">
-                      Envoyer le message
+                    <button type="submit" className="w-full py-5 bg-black text-white text-xs uppercase tracking-widest font-bold hover:bg-black/90 transition-all">
+                      Envoyer le message via WhatsApp
                     </button>
                   </form>
                 </div>

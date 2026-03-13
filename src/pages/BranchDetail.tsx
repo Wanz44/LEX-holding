@@ -53,10 +53,16 @@ export default function BranchDetail() {
               {branch.description}
             </p>
             <div className="flex flex-wrap gap-6 pt-4">
-              <button className="px-10 py-4 bg-white text-black text-xs uppercase tracking-widest font-bold hover:bg-opacity-90 transition-all">
-                Nos Services
+              <button 
+                onClick={() => window.open(`https://wa.me/243980631745?text=Bonjour, je souhaite demander un devis pour le pôle ${branch.name}.`, '_blank')}
+                className="px-10 py-4 bg-white text-black text-xs uppercase tracking-widest font-bold hover:bg-opacity-90 transition-all"
+              >
+                Demander un devis
               </button>
-              <button className="px-10 py-4 border border-white/20 text-white text-xs uppercase tracking-widest font-bold hover:bg-white/5 transition-all">
+              <button 
+                onClick={() => window.open(`https://wa.me/243980631745?text=Bonjour, je souhaite contacter le pôle ${branch.name}.`, '_blank')}
+                className="px-10 py-4 border border-white/20 text-white text-xs uppercase tracking-widest font-bold hover:bg-white/5 transition-all"
+              >
                 Contact Direct
               </button>
             </div>
@@ -159,10 +165,16 @@ export default function BranchDetail() {
             Nos experts sont à votre disposition pour étudier vos besoins et vous proposer des solutions adaptées.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            <button className="w-full md:w-auto px-12 py-5 bg-white text-black text-xs uppercase tracking-widest font-bold hover:bg-opacity-90 transition-all">
+            <button 
+              onClick={() => window.open(`https://wa.me/243980631745?text=Bonjour, je souhaite demander un devis pour le pôle ${branch.name}.`, '_blank')}
+              className="w-full md:w-auto px-12 py-5 bg-white text-black text-xs uppercase tracking-widest font-bold hover:bg-opacity-90 transition-all"
+            >
               Demander un devis
             </button>
-            <button className="w-full md:w-auto px-12 py-5 border border-white/20 text-white text-xs uppercase tracking-widest font-bold hover:bg-white/5 transition-all">
+            <button 
+              onClick={() => window.open(`https://wa.me/243980631745?text=Bonjour, je souhaite contacter le pôle ${branch.name}.`, '_blank')}
+              className="w-full md:w-auto px-12 py-5 border border-white/20 text-white text-xs uppercase tracking-widest font-bold hover:bg-white/5 transition-all"
+            >
               Nous contacter <ArrowRight className="ml-4 inline" size={18} />
             </button>
           </div>
