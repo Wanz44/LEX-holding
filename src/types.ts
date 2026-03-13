@@ -59,13 +59,15 @@ export const BRANCHES: Branch[] = [
     name: "LEX AGRICULTURA",
     fullName: "Lex Agricultura Manducare",
     domain: "Agriculture & Agro-industrie",
-    description: "Exploitation agricole moderne et solutions alimentaires durables pour la souveraineté alimentaire.",
+    description: "Exploitation agricole moderne, élevage diversifié et solutions alimentaires durables pour la souveraineté alimentaire.",
     color: "#16A34A", // Green
     icon: "Sprout",
     image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
     services: [
       "Production Maraîchère",
-      "Élevage Industriel",
+      "Élevage de Bétail",
+      "Aviculture (Volaille)",
+      "Pisciculture",
       "Transformation Agro-alimentaire",
       "Distribution de Produits Frais"
     ],
