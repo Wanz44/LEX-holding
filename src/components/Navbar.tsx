@@ -26,9 +26,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center group">
           <img 
-            src="https://efzybrnlapxwxkorddtv.supabase.co/storage/v1/object/sign/LEX%20holding/02.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80MTdmZmQ5ZS1jYWE3LTRmY2MtYTgzNS1mYzgwZGE1YWY0ZjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJMRVggaG9sZGluZy8wMi5wbmciLCJpYXQiOjE3NzMzOTcyMTQsImV4cCI6MjA4ODc1NzIxNH0.5f9RIwOZ22MPwG94Xm5KoMEZcoVwUYqzuy1d33odSLk" 
+            src="https://efzybrnlapxwxkorddtv.supabase.co/storage/v1/object/sign/LEX%20holding/02blanc.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80MTdmZmQ5ZS1jYWE3LTRmY2MtYTgzNS1mYzgwZGE1YWY0ZjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJMRVggaG9sZGluZy8wMmJsYW5jLnBuZyIsImlhdCI6MTc3MzM5Nzc1NSwiZXhwIjoyMDg4NzU3NzU1fQ.5leVtJpDdcpn3eTNJdq74HFUM_eoxm8y0J8hAZS6scM" 
             alt="LEX HOLDING" 
-            className="h-32 md:h-36 w-auto object-contain brightness-0 invert" 
+            className="h-16 md:h-18 w-auto object-contain brightness-0 invert" 
             referrerPolicy="no-referrer" 
           />
         </Link>
