@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { BRANCHES } from '../types';
 import { motion } from 'motion/react';
-import { ArrowLeft, ArrowRight, CheckCircle2, Music, Truck, Sprout, GraduationCap, HeartPulse } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, Music, Truck, Sprout, GraduationCap, HeartPulse, ShoppingBag } from 'lucide-react';
 
 const ICON_MAP: Record<string, any> = {
   GraduationCap,
@@ -9,6 +9,7 @@ const ICON_MAP: Record<string, any> = {
   Music,
   Truck,
   HeartPulse,
+  ShoppingBag,
 };
 
 export default function BranchDetail() {

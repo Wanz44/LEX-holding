@@ -141,4 +141,27 @@ export const BRANCHES: Branch[] = [
       { label: "Cliniques", value: "" }
     ]
   },
+  {
+    id: "bisness",
+    name: "LEX BISNESS",
+    fullName: "Lex Bisness Group",
+    domain: "Commerce & Distribution",
+    description: "Solutions de commerce multisectorielles incluant la Quincaillerie, l'Habillement, l'Automobile et l'E-commerce.",
+    color: "#EAB308", // Yellow/Gold
+    icon: "ShoppingBag",
+    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
+    services: [
+      "Quincaillerie & Matériaux",
+      "Habillement & Mode",
+      "Automobile & Pièces",
+      "Vente en Ligne (E-commerce)",
+      "Logistique & Distribution",
+      "Solutions de Paiement"
+    ],
+    stats: [
+      { label: "Commandes", value: "" },
+      { label: "Produits", value: "" },
+      { label: "Clients", value: "" }
+    ]
+  },
 ];

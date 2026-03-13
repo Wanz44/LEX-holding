@@ -33,6 +33,7 @@ export default function Footer() {
             <li><Link to="/pole/musicae" className="text-sm text-white/60 hover:text-white transition-colors">Musique</Link></li>
             <li><Link to="/pole/transportatio" className="text-sm text-white/60 hover:text-white transition-colors">Logistique</Link></li>
             <li><Link to="/pole/salus" className="text-sm text-white/60 hover:text-white transition-colors">Santé & Vétérinaire</Link></li>
+            <li><Link to="/pole/bisness" className="text-sm text-white/60 hover:text-white transition-colors">Lex Bisness (E-commerce)</Link></li>
           </ul>
         </div>
 
